@@ -10,7 +10,7 @@
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation; either version 2 of the License, or
+#    the Free Software Foundation; either version 3 of the License, or
 #    (at your option) any later version.
 
 #    This program is distributed in the hope that it will be useful,
@@ -30,18 +30,15 @@ usage(){
 
 if [ `/usr/bin/id -u` -ne 0 ]; then
     echo 'Please, run this script as root'
-    usage()
-    exit
+    usage
 fi
 
-if [ -z "$1" ]
-then
-    MTIME_DAYS = ''
+if [ -z "$1" ]; then
+    MTIME_DAYS=''
 else
-    MTIME_DAYS = '-mtime +$1'
+    MTIME_DAYS='-mtime +$1'
 fi
 
-MTIME_DAYS = $1
 echo Currently logs size: `du -hs /var/log/ | awk {'print $1'}`
 echo 'Backup the log folder on home'
 tar zcPf ~/logs-`date '+%m-%d-%y-%H:%M:%S'`.tar.gz /var/log
