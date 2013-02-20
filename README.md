@@ -10,7 +10,7 @@ This a collection of common and useful scripts that I found or create for diary 
 
 * kernpurge: is a bash script for delete old kernels and clean old kernel entries in grub.
 
-* ipblocker: ipblocker is a bash script for ban easily single ips or range ips
+* ipblocker: is a bash script for ban easily single ips or range ips
 using iptables.
 
 It is used for ban bulk ip address or serveral ranges ips at one time. For that write a line for
@@ -18,3 +18,5 @@ every ip or range ip in the file ban_ips.txt. It allows CIDR format, single ip o
 execute the script without arguments.
 
 If some ip has bad format, you can inspect the generated file ban_ips_wrong.txt.
+
+* setup-jhbuild: is a bash script for easy install jhbuild
