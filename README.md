@@ -20,3 +20,5 @@ execute the script without arguments.
 If some ip has bad format, you can inspect the generated file ban_ips_wrong.txt.
 
 * setup-jhbuild: is a bash script for easy install jhbuild
+
+* setup-git-bz: is a bash script for easy install git-bz
