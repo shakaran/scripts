@@ -39,8 +39,7 @@ echo 'Installing Percona Toolkit dependencies'
 yum install -y perl-DBD-MySQL perl-IO-Socket-SSL
 
 # Prevent failures with incorrect libmysqlclient (dirty workaround)
-if [ ! -f /usr/lib64/libmysqlclient.so.18 ];
-then
+if [ ! -f /usr/lib64/libmysqlclient.so.18 ]; then
     cp -rf /usr/lib64/libmysqlclient.so.16 /usr/lib64/libmysqlclient.so.18
     # ln -s /usr/lib64/libmysqlclient.so.16 /usr/lib64/libmysqlclient.so.18
 fi
