@@ -28,3 +28,5 @@ If some ip has bad format, you can inspect the generated file ban_ips_wrong.txt.
 See more info about Percona Toolkit at http://www.percona.com/doc/percona-toolkit/
 
 * ruby-setup: is a bash script for install ruby on CentOS
+
+* showcon: is a bash script for print TCP and UDP total connections order ascendent by user
