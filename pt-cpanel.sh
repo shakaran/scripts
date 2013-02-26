@@ -48,5 +48,8 @@ echo 'Downloading the latest percona-toolkit and installing'
 wget percona.com/get/percona-toolkit.rpm -O percona-toolkit.rpm && rpm -Uvh percona-toolkit.rpm
 rm -rf percona-toolkit.rpm
 
+# Disable Percona repo (avoid future Percona-Server-shared-compat updates)
+sed -i "s/enabled = 1/enabled = 0/g" /etc/yum.repos.d/Percona.repo
+
 # Restore yum.conf
 sed -i 's/#exclude=/exclude=/g' /etc/yum.conf
