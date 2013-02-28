@@ -32,3 +32,8 @@ See more info about Percona Toolkit at http://www.percona.com/doc/percona-toolki
 * showcon: is a bash script for print TCP and UDP total connections order ascendent by user
 
 * repo-setup: is a bash script for easy install repo python script
+
+See more info about repo at:
+
+- http://source.android.com/source/version-control.html
+- https://code.google.com/p/git-repo/
