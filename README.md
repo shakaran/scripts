@@ -19,9 +19,9 @@ execute the script without arguments.
 
 If some ip has bad format, you can inspect the generated file ban_ips_wrong.txt.
 
-* setup-jhbuild: is a bash script for easy install jhbuild
+* jhbuild-setup: is a bash script for easy install jhbuild
 
-* setup-git-bz: is a bash script for easy install git-bz
+* git-bz-setup: is a bash script for easy install git-bz
 
 * pt-cpanel: is a bash script for install Percona Toolkit under a CentOS system with cPanel.
 
