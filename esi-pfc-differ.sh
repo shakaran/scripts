@@ -29,5 +29,5 @@ pdftotext -layout NormativaPFC2007.pdf NormativaPFC2007.txt
 wget http://webpub.esi.uclm.es/archivos/211/Normativa-PFC-2013 -O Normativa-PFC-2013.pdf 
 pdftotext -layout Normativa-PFC-2013.pdf Normativa-PFC-2013.txt
 
-diff -upN NormativaPFC2007.txt Normativa-PFC-2013.txt > esi-pfc-changes.diff
+diff -bBu NormativaPFC2007.txt Normativa-PFC-2013.txt > esi-pfc-changes.diff
 diff --side-by-side NormativaPFC2007.txt Normativa-PFC-2013.txt | pager
