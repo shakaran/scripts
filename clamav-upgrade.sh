@@ -55,4 +55,7 @@ else
 	
 	# Update antivirus database
 	freshclam
+	
+	# Force to scan new ClamAV perl modules (File-Scan-ClamAV) for ensure nice behaviour
+	/scripts/perlinstaller --force File::Scan::ClamAV
 fi
