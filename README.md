@@ -41,3 +41,10 @@ See more info about repo at:
 * esi-pfc-differ: is a bash script for compare new changes in PFC normative for ESI-UCLM.
 It was originally created for verify changes in this web notice
 http://webpub.esi.uclm.es/actualidad/noticias/normativa-proyecto-fin-de-carrera
+
+* clamav-upgrade: is a bash script to upgrade Clamav's version in cPanel production servers
+
+The purpose of this script is upgrade a quickly Clamav's cPanel 
+production server since that cPanel sync usually takes several days
+or weeks to reach the production server and some attackers could use
+this window maintenance in advantage.
