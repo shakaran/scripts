@@ -48,3 +48,12 @@ The purpose of this script is upgrade a quickly Clamav's cPanel
 production server since that cPanel sync usually takes several days
 or weeks to reach the production server and some attackers could use
 this window maintenance in advantage.
+
+* cp-login-inspect: is a bash script for easily check all lastlogin
+ip data for each cpanel account in a server and geolocate each ip for
+detect suspicious activity from non legitimate countries or hacked
+accounts
+
+With the option -c you can clear all the files and backup the data in
+a backup file. Without arguments you get all the output without clear any
+useful data.
