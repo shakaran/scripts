@@ -19,7 +19,7 @@
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 YAML_VERSION='0.1.4';
-RUBY_VERSION_LATEST='2.0.0-p0';
+RUBY_VERSION_LATEST='2.0.0-p247';
 RUBYGEMS_VERSION='1.8.25';
 
 if [ `/usr/bin/id -u` -ne 0 ]; then
