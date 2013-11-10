@@ -57,3 +57,5 @@ accounts
 With the option -c you can clear all the files and backup the data in
 a backup file. Without arguments you get all the output without clear any
 useful data.
+
+* exiftool-setup: is a bash script for easy install exiftool from sources
