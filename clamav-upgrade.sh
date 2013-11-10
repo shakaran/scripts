@@ -31,9 +31,9 @@ fi
 
 # Search last version manually in http://www.clamav.net/download/sources/ 
 # (TODO: this could be improved autodetecting and filtering the latest from sourceforge site)
-CLAMAV_PREVIOUS_VERSION='0.97.5'
-CLAMAV_CURRENT_VERSION='0.97.6'
-CLAMAV_NEW_VERSION='0.97.8'
+CLAMAV_PREVIOUS_VERSION='0.97.6'
+CLAMAV_CURRENT_VERSION='0.97.8'
+CLAMAV_NEW_VERSION='0.98'
 
 CLAMAV_CPANEL_FOLDER='/usr/local/cpanel/modules-install/clamavconnector-Linux-*'
 
@@ -46,8 +46,10 @@ else
 	cd ${CLAMAV_CPANEL_FOLDER}
 	wget http://downloads.sourceforge.net/clamav/clamav-${CLAMAV_NEW_VERSION}.tar.gz -O clamav-${CLAMAV_NEW_VERSION}.tar.gz
 
-	sed -i 's/AVV=${CLAMAV_CURRENT_VERSION}/AVV=${CLAMAV_NEW_VERSION}/g' install
-	sed -i 's/AVVOLD\=${CLAMAV_PREVIOUS_VERSION}/AVVOLD\=${CLAMAV_CURRENT_VERSION}/g' install
+	# sed -i 's/AVV=${CLAMAV_CURRENT_VERSION}/AVV=${CLAMAV_NEW_VERSION}/g' install
+	replace 'AVV=${CLAMAV_CURRENT_VERSION}' 'AVV=${CLAMAV_NEW_VERSION}' -- install
+	#sed -i 's/AVVOLD\=${CLAMAV_PREVIOUS_VERSION}/AVVOLD\=${CLAMAV_CURRENT_VERSION}/g' install
+    replace 'AVVOLD=${CLAMAV_PREVIOUS_VERSION}' 'AVVOLD=${CLAMAV_CURRENT_VERSION}' -- install
 
 	echo "${CLAMAV_NEW_VERSION}" > progversion
 
