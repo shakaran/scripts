@@ -59,3 +59,5 @@ a backup file. Without arguments you get all the output without clear any
 useful data.
 
 * exiftool-setup: is a bash script for easy install exiftool from sources
+
+* fix-ubuntu-privacy: remove some config and features for protect invasive user privacy policy in ubuntu
