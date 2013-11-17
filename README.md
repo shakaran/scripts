@@ -61,3 +61,7 @@ useful data.
 * exiftool-setup: is a bash script for easy install exiftool from sources
 
 * fix-ubuntu-privacy: remove some config and features for protect invasive user privacy policy in ubuntu
+
+* housemov: is a simple python script for know the number of transmitted housing (house movements)
+between spanish citiens. It fetch real data from (Consejo General del Notariado, entro de información estadística del notariado)
+This script is based in montly report from http://www.notariado.org/liferay/web/cien/estadisticas-principales/inmuebles/evolucion-de-compraventa-de-viviendas
