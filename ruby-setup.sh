@@ -19,7 +19,7 @@
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 YAML_VERSION='0.1.4';
-RUBY_VERSION_LATEST='2.0.0-p247';
+RUBY_VERSION_LATEST='2.1.0';
 RUBYGEMS_VERSION='1.8.25';
 
 if [ `/usr/bin/id -u` -ne 0 ]; then
@@ -32,8 +32,8 @@ cd yaml-*; ./configure; make; make install; cd ..; rm -rf yaml-*
 
 yum install -y libyaml libffi
 
-# http://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/
-wget http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-${RUBY_VERSION_LATEST}.tar.gz -O - | tar xvz
+# http://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/
+wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-${RUBY_VERSION_LATEST}.tar.gz -O - | tar xvz
 cd ruby-*; ./configure --enable-shared; make; make install; cd ..; rm -rf ruby-*
 
 # Uncomment this for Ruby 1.9
