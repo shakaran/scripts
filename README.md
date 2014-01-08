@@ -67,3 +67,6 @@ between spanish citiens. It fetch real data from (Consejo General del Notariado,
 This script is based in montly report from http://www.notariado.org/liferay/web/cien/estadisticas-principales/inmuebles/evolucion-de-compraventa-de-viviendas
 
 * goog_market_cap: is a simple python script for know the GOOG Market Cap value from Yahoo Finance
+
+* whois-setup: is a bash script for setup the Debian version (http://packages.qa.debian.org/w/whois.html) 
+of whois program in CentOS servers (instead of jwhois that offers less data)
