@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This a collection of common and useful scripts that I found or create for diary use.
+This a collection of common and useful scripts that I found or create for diary use or for my freelance customers.
 
 ## Scripts
 
@@ -65,3 +65,5 @@ useful data.
 * housemov: is a simple python script for know the number of transmitted housing (house movements)
 between spanish citiens. It fetch real data from (Consejo General del Notariado, entro de información estadística del notariado)
 This script is based in montly report from http://www.notariado.org/liferay/web/cien/estadisticas-principales/inmuebles/evolucion-de-compraventa-de-viviendas
+
+* goog_market_cap: is a simple python script for know the GOOG Market Cap value from Yahoo Finance
