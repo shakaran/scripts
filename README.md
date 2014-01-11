@@ -70,3 +70,6 @@ This script is based in montly report from http://www.notariado.org/liferay/web/
 
 * whois-setup: is a bash script for setup the Debian version (http://packages.qa.debian.org/w/whois.html) 
 of whois program in CentOS servers (instead of jwhois that offers less data)
+
+* phpBBLogin: is a simple python script for login in phpBB forums and extract links
+from forum threads (for example with direct download files)
