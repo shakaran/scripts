@@ -31,11 +31,11 @@ fi
 
 # Search last version manually in http://www.clamav.net/download/sources/ 
 # (TODO: this could be improved autodetecting and filtering the latest from sourceforge site)
-CLAMAV_PREVIOUS_VERSION='0.97.6'
-CLAMAV_CURRENT_VERSION='0.97.8'
-CLAMAV_NEW_VERSION='0.98'
+CLAMAV_PREVIOUS_VERSION='0.98.1'
+CLAMAV_CURRENT_VERSION='0.98.3'
+CLAMAV_NEW_VERSION='0.98.4'
 
-CLAMAV_CPANEL_FOLDER='/usr/local/cpanel/modules-install/clamavconnector-Linux-*'
+CLAMAV_CPANEL_FOLDER='/usr/local/cpanel/modules-install/clamavconnector-Linux-x86_64'
 
 # Control if $CLAMAV_CPANEL_FOLDER doesn't exist.
 if [ ! -d "${CLAMAV_CPANEL_FOLDER}" ]; then
