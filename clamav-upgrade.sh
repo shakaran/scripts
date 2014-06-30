@@ -62,4 +62,8 @@ else
 	
 	# Force to scan new ClamAV perl modules (File-Scan-ClamAV) for ensure nice behaviour
 	/scripts/perlinstaller --force File::Scan::ClamAV
+	
+	# Avoid warnings by Altered RPMs found by check_cpanel_rpms cpanel script
+	# This override global settings and use /var/cpanel/rpm.versions.d/local.versions file
+	/scripts/update_local_rpm_versions --edit target_settings.cpanel-clamav unmanaged
 fi
