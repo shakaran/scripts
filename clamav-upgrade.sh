@@ -29,6 +29,8 @@ if [ `/usr/bin/id -u` -ne 0 ]; then
     exit 1
 fi
 
+# clamscan -V
+
 # Search last version manually in http://www.clamav.net/download/sources/ 
 # (TODO: this could be improved autodetecting and filtering the latest from sourceforge site)
 CLAMAV_PREVIOUS_VERSION='0.98.1'
