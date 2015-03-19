@@ -75,3 +75,7 @@ of whois program in CentOS servers (instead of jwhois that offers less data)
 from forum threads (for example with direct download files)
 
 * ubuntu-percona-5.6-setup: is a bash script for setup Percona 5.6 in Ubuntu
+
+  Quick setup:
+  
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/ubuntu-percona-5.6-setup.sh -O - | bash
