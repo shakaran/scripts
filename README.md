@@ -73,3 +73,5 @@ of whois program in CentOS servers (instead of jwhois that offers less data)
 
 * phpBBLogin: is a simple python script for login in phpBB forums and extract links
 from forum threads (for example with direct download files)
+
+* ubuntu-percona-5.6-setup: is a bash script for setup Percona 5.6 in Ubuntu
