@@ -2,7 +2,7 @@
 
 #    ruby-setup is a bash script for install ruby on CentOS
 
-#    Copyright (C) 2013 by Ángel Guzmán Maeso, shakaran at gmail dot com
+#    Copyright (C) 2013-2016 by Ángel Guzmán Maeso, shakaran at gmail dot com
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -18,9 +18,9 @@
 #    along with this program; if not, write to the Free Software
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-YAML_VERSION='0.1.4';
-RUBY_VERSION_LATEST='2.1.0';
-RUBYGEMS_VERSION='1.8.25';
+YAML_VERSION='0.1.6';
+RUBY_VERSION_LATEST='2.2.4';
+RUBYGEMS_VERSION='2.5.1';
 
 if [ `/usr/bin/id -u` -ne 0 ]; then
     echo 'Please, run this script as root'
@@ -32,16 +32,16 @@ cd yaml-*; ./configure; make; make install; cd ..; rm -rf yaml-*
 
 yum install -y libyaml libffi
 
-# http://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/
-wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-${RUBY_VERSION_LATEST}.tar.gz -O - | tar xvz
+# https://www.ruby-lang.org/es/news/2015/12/16/ruby-2-2-4-released/
+wget https://cache.ruby-lang.org/pub/ruby/2.2/ruby-${RUBY_VERSION_LATEST}.tar.gz -O - | tar xvz
 cd ruby-*; ./configure --enable-shared; make; make install; cd ..; rm -rf ruby-*
 
 # Uncomment this for Ruby 1.9
 #RUBY_VERSION='1.9.3-p385'; wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-${RUBY_VERSION}.tar.gz -O - | tar xvz
 #cd ruby-*; ./configure --enable-shared; make; make install; cd ..; rm -rf ruby-*
 
-wget http://rubyforge.org/frs/download.php/76729/rubygems-${RUBYGEMS_VERSION}.tgz -O - | tar xvz
+wget https://rubygems.org/rubygems/rubygems-${RUBYGEMS_VERSION}.tgz -O - | tar xvz
 cd rubygems-*; ruby setup.rb; cd ..; rm -rf rubygems-*; ruby -v
 
 # Install rails and update gems
-gem install rails --include-dependencies; gem update
+gem install rails; gem update
