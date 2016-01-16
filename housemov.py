@@ -30,7 +30,7 @@ payload = {
            'tiposObjetos': '3',
            'clasesFincasUrbanas': '14,15,16,17',
            'fechaInicio': '01/01/2007', # This is the date more ancient to fetch
-           'fechaFin': '01/06/2013', # Currently only offered until this recent date
+           'fechaFin': '01/01/2016', # Currently only offered until this recent date
            'tipoConstruccion': '',
            'tiposObjetos': '3', # Unkwon object types, 3 is a valid value
            'campos': 'mes,ano,numTotal', # Valid provincia, comunidad and municipio fields (but this will take more a huge time to fetch)
