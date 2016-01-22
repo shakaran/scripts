@@ -10,6 +10,12 @@ This a collection of common and useful scripts that I found or create for diary 
 
 * kernpurge: is a bash script for delete old kernels and clean old kernel entries in grub.
 
+    Quick use:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/kernpurge.sh -O - | bash
+    ```
+
 * ipblocker: is a bash script for ban easily single ips or range ips using iptables.
 
     It is used for ban bulk ip address or serveral ranges ips at one time. For that write a line for
