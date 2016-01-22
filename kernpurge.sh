@@ -24,4 +24,4 @@ if [ `/usr/bin/id -u` -ne 0 ]; then
     exit 1
 fi
 
-sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") )
+sudo apt-get purge -y $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") )
