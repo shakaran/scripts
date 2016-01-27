@@ -98,6 +98,12 @@ from forum threads (for example with direct download files)
     wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-mutt.sh -O - | bash
     ```
     
+    Or with curl:
+    
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/setup-mutt.sh | bash
+    ```
+    
 * setup-forge-cli: is a bash script to install the Laravel's Forge-cli 
 
     Quick setup:
