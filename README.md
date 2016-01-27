@@ -89,3 +89,12 @@ from forum threads (for example with direct download files)
     ```bash
     wget https://raw.githubusercontent.com/shakaran/scripts/master/ubuntu-percona-5.6-setup.sh -O - | bash
     ```
+
+* setup-mutt: is a bash script to install the Mutt E-Mail Client
+
+    Quick setup:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-mutt.sh -O - | bash
+    ```
+
