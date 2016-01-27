@@ -97,4 +97,11 @@ from forum threads (for example with direct download files)
     ```bash
     wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-mutt.sh -O - | bash
     ```
+    
+* setup-forge-cli: is a bash script to install the Laravel's Forge-cli 
 
+    Quick setup:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-forge-cli.sh -O - | bash
+    ```
