@@ -111,3 +111,17 @@ from forum threads (for example with direct download files)
     ```bash
     wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-forge-cli.sh -O - | bash
     ```
+
+* purge-apache: is a bash script to delete and purge Apache in a server
+
+    Quick setup:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/purge-apache.sh -O - | bash
+    ```
+    
+    Or with curl:
+    
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/purge-apache.sh | bash
+    ```
