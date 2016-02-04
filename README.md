@@ -125,3 +125,17 @@ from forum threads (for example with direct download files)
     ```bash
     curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/purge-apache.sh | bash
     ```
+
+* setup-nginx-dev: is a bash script to install the nginx development version
+
+    Quick setup:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-nginx-dev.sh -O - | bash
+    ```
+    
+    Or with curl:
+    
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/setup-nginx-dev.sh | bash
+    ```   
