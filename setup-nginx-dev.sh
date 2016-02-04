@@ -35,9 +35,10 @@ else
     echo "Not running a distribution with /etc/os-release available"
 fi
 
+UBUNTU_CODENAME=`lsb_release -c | cut -f2`
 sudo -s
 nginx=development
-echo "deb http://ppa.launchpad.net/nginx/$nginx/ubuntu $VERSION main" > /etc/apt/sources.list.d/nginx-$nginx-$VERSION.list
+echo "deb http://ppa.launchpad.net/nginx/$nginx/ubuntu ${UBUNTU_CODENAME} main" > /etc/apt/sources.list.d/nginx-$nginx-${UBUNTU_CODENAME}.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
 apt-get update
 apt-get -y install nginx
