@@ -36,10 +36,10 @@ else
 fi
 
 UBUNTU_CODENAME=`lsb_release -c | cut -f2`
-sudo -s
 nginx=development
 echo "deb http://ppa.launchpad.net/nginx/$nginx/ubuntu ${UBUNTU_CODENAME} main" > /etc/apt/sources.list.d/nginx-$nginx-${UBUNTU_CODENAME}.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
 apt-get update
 apt-get -y install nginx
 systemctl start nginx
+echo "Nginx `nginx -v  2>&1 | cut -f2  -d/` installed"
