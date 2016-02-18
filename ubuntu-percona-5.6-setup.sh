@@ -3,7 +3,7 @@
 #    ubuntu-percona-5.6-setup is a bash script for setup Percona 5.6 in
 #    Ubuntu
 
-#    Copyright (C) 2015 by Ángel Guzmán Maeso, shakaran at gmail dot com
+#    Copyright (C) 2015-2016 by Ángel Guzmán Maeso, shakaran at gmail dot com
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -54,7 +54,8 @@ apt-key adv --keyserver keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A
 for deb in deb deb-src; do echo "$deb http://repo.percona.com/apt `lsb_release -cs` main"; done | sudo tee -a /etc/apt/sources.list
 
 # Update
-apt-get update
+apt-get -q -q update
 
 # Install percona 5.6
-apt-get install -y percona-server-server-5.6 percona-server-client-5.6
+DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y percona-server-server-5.6 percona-server-client-5.6
+echo "Percona sucessfully installed."
