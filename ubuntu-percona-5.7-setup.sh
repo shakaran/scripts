@@ -57,5 +57,5 @@ for deb in deb deb-src; do echo "$deb http://repo.percona.com/apt `lsb_release -
 apt-get -q -q update
 
 # Install percona 5.6
-DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y percona-server-server-5.6 percona-server-client-5.6
+DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y percona-server-server-5.7 percona-server-client-5.7 percona-server-5.7-dbg
 echo "Percona sucessfully installed."
