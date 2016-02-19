@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#    ubuntu-percona-5.6-setup is a bash script for setup Percona 5.6 in
+#    ubuntu-percona-5.7-setup is a bash script for setup Percona 5.6 in
 #    Ubuntu
 
 #    Copyright (C) 2015-2016 by Ángel Guzmán Maeso, shakaran at gmail dot com
@@ -56,6 +56,6 @@ for deb in deb deb-src; do echo "$deb http://repo.percona.com/apt `lsb_release -
 # Update
 apt-get -q -q update
 
-# Install percona 5.6
+# Install percona 5.7
 DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y percona-server-server-5.7 percona-server-client-5.7 percona-server-5.7-dbg
 echo "Percona sucessfully installed."
