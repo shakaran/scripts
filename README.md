@@ -139,3 +139,17 @@ from forum threads (for example with direct download files)
     ```bash
     curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/setup-nginx-dev.sh | bash
     ```   
+
+* setup-htop2: is a bash script to install htop from source
+
+    Quick setup:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/setup-htop2.sh -O - | bash
+    ```
+    
+    Or with curl:
+    
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/setup-htop2.sh | bash
+    ```   
