@@ -82,12 +82,12 @@ of whois program in CentOS servers (instead of jwhois that offers less data)
 * phpBBLogin: is a simple python script for login in phpBB forums and extract links
 from forum threads (for example with direct download files)
 
-* ubuntu-percona-5.6-setup: is a bash script for setup Percona 5.6 in Ubuntu
+* ubuntu-percona-5.7-setup: is a bash script for setup Percona 5.7 in Ubuntu
 
     Quick setup:
 
     ```bash
-    wget https://raw.githubusercontent.com/shakaran/scripts/master/ubuntu-percona-5.6-setup.sh -O - | bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/ubuntu-percona-5.7-setup.sh -O - | bash
     ```
 
 * setup-mutt: is a bash script to install the Mutt E-Mail Client
