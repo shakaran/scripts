@@ -19,8 +19,8 @@
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 YAML_VERSION='0.1.6';
-RUBY_VERSION_LATEST='2.2.4';
-RUBYGEMS_VERSION='2.5.1';
+RUBY_VERSION_LATEST='2.3.1';
+RUBYGEMS_VERSION='2.6.8';
 
 if [ `/usr/bin/id -u` -ne 0 ]; then
     echo 'Please, run this script as root'
