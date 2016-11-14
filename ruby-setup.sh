@@ -34,7 +34,7 @@ yum install -y libyaml libffi
 
 # https://www.ruby-lang.org/es/news/2015/12/16/ruby-2-2-4-released/
 wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-${RUBY_VERSION_LATEST}.tar.gz -O - | tar xvz
-cd ruby-*; ./configure --enable-shared; make; make install; cd ..; rm -rf ruby-*
+cd ruby-*; ./configure --bindir=/usr --enable-shared; make; make install; cd ..; rm -rf ruby-*
 
 # Uncomment this for Ruby 1.9
 #RUBY_VERSION='1.9.3-p385'; wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-${RUBY_VERSION}.tar.gz -O - | tar xvz
