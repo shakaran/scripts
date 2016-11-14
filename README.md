@@ -34,6 +34,12 @@ This a collection of common and useful scripts that I found or create for diary 
 
 * ruby-setup: is a bash script for install ruby on CentOS
 
+    Quick use:
+
+    ```bash
+    wget https://raw.githubusercontent.com/shakaran/scripts/master/ruby-setup.sh -O - | bash
+    ```
+    
 * showcon: is a bash script for print TCP and UDP total connections order ascendent by user
 
 * repo-setup: is a bash script for easy install repo python script
