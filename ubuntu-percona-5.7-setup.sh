@@ -59,3 +59,5 @@ apt-get -q -q update
 # Install percona 5.7
 DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y --allow-unauthenticated percona-server-server-5.7 percona-server-client-5.7 percona-server-5.7-dbg
 echo "Percona sucessfully installed."
+
+mysql_secure_installation
