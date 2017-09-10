@@ -24,7 +24,7 @@ if [ `/usr/bin/id -u` -ne 0 ]; then
 fi
 
 service apache2 stop
-apt-get remove --purge apache2 apache2-utils apache2.2-bin apache2-common -y
+apt-get remove --purge apache2 apache2-utils apache2.2-bin apache2.4-bin apache2-common -y
 apt-get autoremove -y
 apt-get autoclean -y
 rm -Rf /etc/apache2 /usr/lib/apache2 /usr/include/apache2
