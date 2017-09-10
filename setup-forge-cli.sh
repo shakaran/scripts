@@ -25,4 +25,5 @@ if [ `/usr/bin/id -u` -ne 0 ]; then
 fi
 
 wget https://raw.githubusercontent.com/adamgoose/forge-cli/master/dist/forge-cli.phar
+chmod +x forge-cli.phar
 mv forge-cli.phar /usr/local/bin/forge
