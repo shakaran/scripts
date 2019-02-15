@@ -159,3 +159,7 @@ from forum threads (for example with direct download files)
     ```bash
     curl -fsSL https://raw.githubusercontent.com/shakaran/scripts/master/setup-htop2.sh | bash
     ```   
+
+## Buy me a coffe or beer!
+
+[![Buy me a coffee](https://i.imgur.com/Sk4LFzF.png)](https://www.paypal.me/quijost/3)
