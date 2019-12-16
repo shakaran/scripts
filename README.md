@@ -1,5 +1,7 @@
 # Shakaran’s scripts
 
+<a href="https://www.patreon.com/shakaran"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160"></a>
+
 ## Introduction
 
 This a collection of common and useful scripts that I found or create for diary use or for my freelance customers.
